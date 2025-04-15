@@ -7,13 +7,21 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image"; // Added import
 
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col bg-gradient-to-br from-black via-[#1a1a1a] to-[#2d0b0b] min-h-screen">
       {/* Header */}
       <div className="sticky top-0 z-30 flex h-20 items-center justify-between bg-black/80 backdrop-blur-md px-4 md:px-20 shadow-md">
-        <img src="/images/logo.svg" alt="DMS S-Plus Logo" className="h-16" />
+        <Image
+          src="/images/logo.svg"
+          alt="DMS S-Plus Logo"
+          width={64}
+          height={64}
+          className="h-16 w-auto"
+          priority
+        />
         <div className="flex items-center gap-8">
           {[
             { href: "https://dmsplus.id/#about", label: "About Us" },
@@ -84,10 +92,13 @@ export default function Home() {
           </p>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <img
+          <Image
             src="/images/s.png"
             alt="S+"
+            width={340}
+            height={340}
             className="h-56 w-56 lg:h-[340px] lg:w-[340px]"
+            sizes="(max-width: 1024px) 224px, 340px"
           />
         </div>
       </div>
@@ -160,10 +171,14 @@ export default function Home() {
               >
                 {/* Modern Elegant Tile */}
                 <div className="relative group overflow-hidden shadow-lg hover:shadow-red-700/60 transition-shadow duration-300 rounded-2xl">
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.alt}
+                    width={600}
+                    height={384}
                     className="w-full h-72 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105 rounded-2xl"
+                    sizes="(max-width: 1024px) 100vw, 600px"
+                    unoptimized
                   />
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] px-4 py-2 flex justify-center items-center
                     bg-black/40 backdrop-blur-md border border-red-700/60 rounded-lg
@@ -263,10 +278,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="hover:scale-105 transition-transform"
               >
-                <img
+                <Image
                   src="/images/google-play.png"
                   alt="Google Play"
+                  width={150}
+                  height={44}
                   className="h-[44px] w-[150px]"
+                  sizes="150px"
                 />
               </a>
               <a
@@ -275,10 +293,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="hover:scale-105 transition-transform"
               >
-                <img
+                <Image
                   src="/images/app-store.png"
                   alt="App Store"
+                  width={150}
+                  height={44}
                   className="h-[44px] w-[150px]"
+                  sizes="150px"
                 />
               </a>
             </div>
