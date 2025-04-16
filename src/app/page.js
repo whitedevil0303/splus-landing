@@ -134,7 +134,7 @@ export default function Home() {
         </p>
         {/* Carousel dari shadcn */}
         <Carousel
-          className="w-full max-w-5xl mx-auto lg:max-w-7xl"
+          className="w-full max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
           opts={{ loop: true }}
         >
           <CarouselContent className="ml-1">
