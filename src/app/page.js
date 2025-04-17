@@ -16,16 +16,16 @@ export default function Home() {
   const [api, setApi] = useState(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
-  
+
   // Setup carousel API listeners
   useEffect(() => {
     if (!api) {
       return;
     }
-    
+
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap());
-    
+
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap());
     });
@@ -221,17 +221,17 @@ export default function Home() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            
+
             {/* Arrows only visible on md and above screens */}
             <div className="hidden md:block">
               <CarouselPrevious />
               <CarouselNext />
             </div>
-            
+
             {/* Mobile controls - arrows and dots in a single row */}
             <div className="flex justify-center items-center gap-4 mt-8 md:hidden h-10">
               <CarouselPrevious className="static transform-none shadow-xl flex-shrink-0" />
-              
+
               {/* Dots indicator between arrows - perfectly centered */}
               <div className="flex items-center gap-2 h-full">
                 {Array.from({ length: count }).map((_, index) => (
@@ -245,7 +245,7 @@ export default function Home() {
                   />
                 ))}
               </div>
-              
+
               <CarouselNext className="static transform-none shadow-xl flex-shrink-0" />
             </div>
           </Carousel>
@@ -275,10 +275,15 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "S+ adalah rumah yang sudah lama aku tunggu. Di sini kita bisa berbagi cerita, kumpul bareng Saraddicts, dan makin dekat dengan para Host. Banyak hadiah, info eksklusif, dan kejutan seru! Semoga S+ terus bertumbuh bersama."
+              "S+ adalah rumah yang sudah lama aku tunggu. Di sini kita bisa
+              berbagi cerita, kumpul bareng Saraddicts, dan makin dekat dengan
+              para Host. Banyak hadiah, info eksklusif, dan kejutan seru! Semoga
+              S+ terus bertumbuh bersama."
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Elsa</span>
-<span className="text-xs text-white/60">Bergabung sejak 2017</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Elsa
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2017</span>
           </div>
           {/* Testimoni 2 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -294,10 +299,15 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Setelah gabung S+ Gold, aku dapat banyak manfaat—bisa Zoom meet bareng host DMS, ngobrol dengan Saraddicts dari berbagai negara, dan masih banyak keuntungan lainnya. Gak nyesel jadi member S+! 🖤🌹"
+              "Setelah gabung S+ Gold, aku dapat banyak manfaat—bisa Zoom meet
+              bareng host DMS, ngobrol dengan Saraddicts dari berbagai negara,
+              dan masih banyak keuntungan lainnya. Gak nyesel jadi member S+!
+              🖤🌹"
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Alvian</span>
-<span className="text-xs text-white/60">Bergabung sejak 2018</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Alvian
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2018</span>
           </div>
           {/* Testimoni 3 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -313,10 +323,14 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Gabung S+ seru banget! Banyak manfaat, dapat teman baru, info-info menarik, dan bisa ikut event bareng Saraddicts lain. Pokoknya nggak nyesel gabung S+! ❤"
+              "Gabung S+ seru banget! Banyak manfaat, dapat teman baru,
+              info-info menarik, dan bisa ikut event bareng Saraddicts lain.
+              Pokoknya nggak nyesel gabung S+! ❤"
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Meydita</span>
-<span className="text-xs text-white/60">Bergabung sejak 2022</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Meydita
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2022</span>
           </div>
           {/* Testimoni 4 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -332,10 +346,14 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "S+ keren banget! Mimpi ketemu host DMS akhirnya terwujud, dapat info terbaru, ikut event seru, dan punya keluarga baru yang asik. Kalau kamu Saraddicts, wajib gabung S+! ❤"
+              "S+ keren banget! Mimpi ketemu host DMS akhirnya terwujud, dapat
+              info terbaru, ikut event seru, dan punya keluarga baru yang asik.
+              Kalau kamu Saraddicts, wajib gabung S+! ❤"
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Inez</span>
-<span className="text-xs text-white/60">Bergabung sejak 2020</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Inez
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2020</span>
           </div>
           {/* Testimoni 5 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -351,10 +369,15 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Jadi member S+ dapat banyak exclusive perks: update acara, komunikasi mudah dengan PIC, undangan event spesial, diskon merchandise, dan makin banyak teman Saraddicts dari berbagai tempat. Bangga jadi bagian S+! 🌹"
+              "Jadi member S+ dapat banyak exclusive perks: update acara,
+              komunikasi mudah dengan PIC, undangan event spesial, diskon
+              merchandise, dan makin banyak teman Saraddicts dari berbagai
+              tempat. Bangga jadi bagian S+! 🌹"
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Delillah, Saraddict Malaysia</span>
-<span className="text-xs text-white/60">Bergabung sejak 2021</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Delillah, Saraddict Malaysia
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2021</span>
           </div>
           {/* Testimoni 6 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -369,11 +392,16 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
-<p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Bangga jadi bagian S+ Platinum. Banyak teman baru yang kini jadi keluarga, admin ramah dan selalu merangkul anggota. Sudah mengikuti DMS sejak kolaborasi dengan Teh Risa di Kota Tua, 9 tahun lalu."
+            <p className="text-white/90 text-base mb-3 italic leading-relaxed">
+              "Bangga jadi bagian S+ Platinum. Banyak teman baru yang kini jadi
+              keluarga, admin ramah dan selalu merangkul anggota. Sudah
+              mengikuti DMS sejak kolaborasi dengan Teh Risa di Kota Tua, 9
+              tahun lalu."
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Lidia</span>
-<span className="text-xs text-white/60">Bergabung sejak 2016</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Lidia
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2016</span>
           </div>
           {/* Testimoni 7 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -389,10 +417,15 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Bangga jadi bagian S+. S+ itu rumah dan keluarga, tempat support Nyai, DMS, dan karya-karyanya. Banyak activity bikin makin akrab dan kompak. Semoga S+ makin solid, tambah anggota, dan tambah terus! ❤"
+              "Bangga jadi bagian S+. S+ itu rumah dan keluarga, tempat support
+              Nyai, DMS, dan karya-karyanya. Banyak activity bikin makin akrab
+              dan kompak. Semoga S+ makin solid, tambah anggota, dan tambah
+              terus! ❤"
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Tatika</span>
-<span className="text-xs text-white/60">Bergabung sejak 2014</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Tatika
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2014</span>
           </div>
           {/* Testimoni 8 */}
           <div className="bg-gradient-to-br from-[#2d0b0b] via-black to-black rounded-3xl shadow-xl p-7 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-red-900/30">
@@ -408,10 +441,15 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "S+ komunitas paling bermanfaat untuk Saraddicts! Admin selalu siap bantu, dapat info DMS lebih awal, Zoom bareng host, banyak teman dari mana-mana, diskon event, bahkan free makanan/minuman. Setiap momen bareng S+ selalu seru dan nggak terlupakan."
+              "S+ komunitas paling bermanfaat untuk Saraddicts! Admin selalu
+              siap bantu, dapat info DMS lebih awal, Zoom bareng host, banyak
+              teman dari mana-mana, diskon event, bahkan free makanan/minuman.
+              Setiap momen bareng S+ selalu seru dan nggak terlupakan."
             </p>
-<span className="text-red-400 font-semibold tracking-wide">Rismala</span>
-<span className="text-xs text-white/60">Bergabung sejak 2020</span>
+            <span className="text-red-400 font-semibold tracking-wide">
+              Rismala
+            </span>
+            <span className="text-xs text-white/60">Bergabung sejak 2020</span>
           </div>
         </div>
       </div>
