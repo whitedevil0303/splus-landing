@@ -194,7 +194,7 @@ export default function Home() {
               ].map((image, i) => (
                 <CarouselItem
                   key={i}
-                  className="basis-full md:basis-1/2 lg:basis-1/3 pl-1 pr-4"
+                  className="basis-full md:basis-1/2 lg:basis-1/3 pl-1 pr-2"
                 >
                   {/* Modern Elegant Tile */}
                   <div className="relative group overflow-hidden shadow-lg hover:shadow-red-700/60 transition-shadow duration-300 rounded-2xl">
@@ -229,15 +229,30 @@ export default function Home() {
             </div>
 
             {/* Mobile controls - arrows and dots in a single row */}
-            <div className="flex justify-center items-center gap-4 mt-8 md:hidden h-10">
-              <CarouselPrevious className="static transform-none shadow-xl flex-shrink-0" />
+            <div className="flex justify-center items-center gap-4 mt-8 md:hidden h-8">
+              <button
+                className="h-8 w-8 flex items-center justify-center rounded-full bg-white shadow transition-colors"
+                onClick={() => {
+                  if (!api) return;
+                  if (current === 0) {
+                    api.scrollTo(count - 1);
+                  } else {
+                    api.scrollPrev();
+                  }
+                }}
+                aria-label="Sebelumnya"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
 
               {/* Dots indicator between arrows - perfectly centered */}
-              <div className="flex items-center gap-2 h-full">
+              <div className="flex items-center justify-center gap-3 h-8">
                 {Array.from({ length: count }).map((_, index) => (
                   <button
                     key={index}
-                    className={`w-3 h-3 rounded-full transition-colors ${
+                    className={`h-2.5 w-2.5 rounded-full transition-colors flex items-center justify-center m-0 p-0 mt-[2px] ${
                       current === index ? "bg-red-500" : "bg-white/30"
                     }`}
                     onClick={() => api?.scrollTo(index)}
@@ -246,7 +261,22 @@ export default function Home() {
                 ))}
               </div>
 
-              <CarouselNext className="static transform-none shadow-xl flex-shrink-0" />
+              <button
+                className="h-8 w-8 flex items-center justify-center rounded-full bg-white shadow transition-colors"
+                onClick={() => {
+                  if (!api) return;
+                  if (current === count - 1) {
+                    api.scrollTo(0);
+                  } else {
+                    api.scrollNext();
+                  }
+                }}
+                aria-label="Berikutnya"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
             </div>
           </Carousel>
         </div>
