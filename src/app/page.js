@@ -275,10 +275,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "S+ adalah rumah yang sudah lama aku tunggu. Di sini kita bisa
-              berbagi cerita, kumpul bareng Saraddicts, dan makin dekat dengan
-              para Host. Banyak hadiah, info eksklusif, dan kejutan seru! Semoga
-              S+ terus bertumbuh bersama."
+              &ldquo;S+ adalah rumah yang sudah lama aku tunggu. Di sini kita
+              bisa berbagi cerita, kumpul bareng Saraddicts, dan makin dekat
+              dengan para Host. Banyak hadiah, info eksklusif, dan kejutan seru!
+              Semoga S+ terus bertumbuh bersama.&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Elsa
@@ -299,10 +299,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Setelah gabung S+ Gold, aku dapat banyak manfaat—bisa Zoom meet
-              bareng host DMS, ngobrol dengan Saraddicts dari berbagai negara,
-              dan masih banyak keuntungan lainnya. Gak nyesel jadi member S+!
-              🖤🌹"
+              &ldquo;Setelah gabung S+ Gold, aku dapat banyak manfaat—bisa Zoom
+              meet bareng host DMS, ngobrol dengan Saraddicts dari berbagai
+              negara, dan masih banyak keuntungan lainnya. Gak nyesel jadi
+              member S+! 🖤🌹&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Alvian
@@ -323,9 +323,9 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Gabung S+ seru banget! Banyak manfaat, dapat teman baru,
+              &ldquo;Gabung S+ seru banget! Banyak manfaat, dapat teman baru,
               info-info menarik, dan bisa ikut event bareng Saraddicts lain.
-              Pokoknya nggak nyesel gabung S+! ❤"
+              Pokoknya nggak nyesel gabung S+! ❤&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Meydita
@@ -346,9 +346,9 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "S+ keren banget! Mimpi ketemu host DMS akhirnya terwujud, dapat
-              info terbaru, ikut event seru, dan punya keluarga baru yang asik.
-              Kalau kamu Saraddicts, wajib gabung S+! ❤"
+              &ldquo;S+ keren banget! Mimpi ketemu host DMS akhirnya terwujud,
+              dapat info terbaru, ikut event seru, dan punya keluarga baru yang
+              asik. Kalau kamu Saraddicts, wajib gabung S+! ❤&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Inez
@@ -369,10 +369,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Jadi member S+ dapat banyak exclusive perks: update acara,
+              &ldquo;Jadi member S+ dapat banyak exclusive perks: update acara,
               komunikasi mudah dengan PIC, undangan event spesial, diskon
               merchandise, dan makin banyak teman Saraddicts dari berbagai
-              tempat. Bangga jadi bagian S+! 🌹"
+              tempat. Bangga jadi bagian S+! 🌹&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Delillah, Saraddict Malaysia
@@ -393,10 +393,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Bangga jadi bagian S+ Platinum. Banyak teman baru yang kini jadi
-              keluarga, admin ramah dan selalu merangkul anggota. Sudah
+              &ldquo;Bangga jadi bagian S+ Platinum. Banyak teman baru yang kini
+              jadi keluarga, admin ramah dan selalu merangkul anggota. Sudah
               mengikuti DMS sejak kolaborasi dengan Teh Risa di Kota Tua, 9
-              tahun lalu."
+              tahun lalu.&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Lidia
@@ -417,10 +417,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "Bangga jadi bagian S+. S+ itu rumah dan keluarga, tempat support
-              Nyai, DMS, dan karya-karyanya. Banyak activity bikin makin akrab
-              dan kompak. Semoga S+ makin solid, tambah anggota, dan tambah
-              terus! ❤"
+              &ldquo;Bangga jadi bagian S+. S+ itu rumah dan keluarga, tempat
+              support Nyai, DMS, dan karya-karyanya. Banyak activity bikin makin
+              akrab dan kompak. Semoga S+ makin solid, tambah anggota, dan
+              tambah terus! ❤&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Tatika
@@ -441,10 +441,11 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
             <p className="text-white/90 text-base mb-3 italic leading-relaxed">
-              "S+ komunitas paling bermanfaat untuk Saraddicts! Admin selalu
-              siap bantu, dapat info DMS lebih awal, Zoom bareng host, banyak
-              teman dari mana-mana, diskon event, bahkan free makanan/minuman.
-              Setiap momen bareng S+ selalu seru dan nggak terlupakan."
+              &ldquo;S+ komunitas paling bermanfaat untuk Saraddicts! Admin
+              selalu siap bantu, dapat info DMS lebih awal, Zoom bareng host,
+              banyak teman dari mana-mana, diskon event, bahkan free
+              makanan/minuman. Setiap momen bareng S+ selalu seru dan nggak
+              terlupakan.&rdquo;
             </p>
             <span className="text-red-400 font-semibold tracking-wide">
               Rismala
